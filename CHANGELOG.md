@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [0.5.3] - 2026-09-05
+
+- Fix packing the wrong directory
+
 ## [0.5.2] - 2026-09-05
 
 - Fixed all cases of `point.x` and `point.y` which relied on OpenEntity patching `.x` and `.y` methods, to use `ary[0]` and `ary[1]` respectively
