@@ -1,6 +1,12 @@
+## FORK!!!
+
+Notice: this is a fork to get up to date with PR here:
+
+<https://github.com/wildfiler/drtiled/pull/63>
+
 # DRTiled
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/wildfiler/drtiled?label=version&style=plastic)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/konnorrogers/drtiled?label=version&style=plastic)
 
 This is a library for loading Tiled map files in [DragonRuby Game Toolkit](https://dragonruby.org/toolkit/game).
 
@@ -138,9 +144,9 @@ object_layer.render(args, args.render_target(:foo).primitives) # You may also pa
  * `:polyline`: Has `x`, `y`, and a `points` attribute containing an array of
 points relative to the [x, y] point
  * `:point`: Has `x` and `y` attributes
- * `:text`: Same attributes as rectangle and `text`, `fontfamily`, `pixelsize`, `bold`, `italic`, `underline`, 
-`strikeout`, `kerning`, `wrap`, `color`, `halign`, `valign` attributes. `to_h` method will return label primitive that 
-can be used to output labels in `args.output.*`.  
+ * `:text`: Same attributes as rectangle and `text`, `fontfamily`, `pixelsize`, `bold`, `italic`, `underline`,
+`strikeout`, `kerning`, `wrap`, `color`, `halign`, `valign` attributes. `to_h` method will return label primitive that
+can be used to output labels in `args.output.*`.
  * `:tile`: Has `gid`, `x`, `y`, `width`, and `height` attributes, `tile` method will return
 `Tiled::Tile` that this object references by `gid`
 
@@ -164,7 +170,7 @@ Or access individual tile related objects:
 ```ruby
 layer.tile_at(new_x, new_y).object_layer.objects
 ```
-In this case all coordinates of object will be relative to tile. 
+In this case all coordinates of object will be relative to tile.
 
 ### Using properties
 
@@ -174,7 +180,7 @@ Next properties types supported:
 3. `color` - will converts to `Tiled::Color` supports `#AARRGGBB` and `#RRGGBB` Tiled formats.
 4. `file` - relative file path will be converted to absolute path relative to game dir.
 5. `object` - will return `Tiled::ObjectRef`, which has `object` attribute that will be resolved to
-referenced object when called. 
+referenced object when called.
 
 
 ## Running samples
@@ -188,10 +194,9 @@ referenced object when called.
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-
 ## Credits
 
-- Thanks to [Pipoya](https://pipoya.itch.io) for beautiful arts and sample map used in samples!  
+- Thanks to [Pipoya](https://pipoya.itch.io) for beautiful arts and sample map used in samples!
 - [Kenney Simplified Platformer Pack](https://www.kenney.nl/assets/simplified-platformer-pack) used for loose tiles map sample
 
 ## License
