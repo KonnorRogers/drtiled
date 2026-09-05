@@ -11,7 +11,7 @@
 #
 set -euo pipefail
 
-PACK_DIR="lib/tiled"
+PACK_DIR="lib"
 BUILDS_DIR="builds"
 
 TAG=""
